@@ -1,0 +1,4 @@
+{
+    "mongoURI": "mongodb+srv://spsm:spsm@spsm-mern-project-blgcy.mongodb.net/spsm?retryWrites=true",
+    "jwtSecret": "sl_myJWTSECRET"
+}

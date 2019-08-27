@@ -1,0 +1,113 @@
+@import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+.snip1092 {
+  position: relative;
+  font-size: 40px;
+  border: 2px solid #000000;
+  color: #ffffff;
+  width: 75px;
+  margin: 40px;
+  height: 75px;
+  line-height: 75px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+}
+.snip1092 * {
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+.snip1092:before,
+.snip1092:after {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.snip1092:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #36d278;
+  content: '';
+  z-index: -1;
+  border-radius: 50%;
+  -webkit-transform: scale(0.9);
+  transform: scale(0.9);
+}
+.snip1092:hover,
+.snip1092 .hover {
+  color: #000000;
+}
+.snip1092:hover:after,
+.snip1092 .hover:after {
+  opacity: 0;
+}
+.snip1092:hover:before,
+.snip1092 .hover:before,
+.snip1092:hover:after,
+.snip1092 .hover:after {
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+.snip1092:hover.blue,
+.snip1092 .hover.blue {
+  color: #2980b9;
+}
+.snip1092:hover.yellow,
+.snip1092 .hover.yellow {
+  color: #f39c12;
+}
+.snip1092:hover.green,
+.snip1092 .hover.green {
+  color: #27ae60;
+}
+.snip1092:hover.navy,
+.snip1092 .hover.navy {
+  color: #34495e;
+}
+.snip1092:hover.red,
+.snip1092 .hover.red {
+  color: #c0392b;
+}
+.snip1092:hover.silver,
+.snip1092 .hover.silver {
+  color: #bdc3c7;
+}
+.snip1092.blue {
+  border: 2px solid #2980b9;
+}
+.snip1092.blue:after {
+  background: #409ad5;
+}
+.snip1092.yellow {
+  border: 2px solid #f39c12;
+}
+.snip1092.yellow:after {
+  background: #f5b043;
+}
+.snip1092.green {
+  border: 2px solid #27ae60;
+}
+.snip1092.green:after {
+  background: #36d278;
+}
+.snip1092.navy {
+  border: 2px solid #34495e;
+}
+.snip1092.navy:after {
+  background: #46627f;
+}
+.snip1092.red {
+  border: 2px solid #c0392b;
+}
+.snip1092.red:after {
+  background: #d65548;
+}
+.snip1092.silver {
+  border: 2px solid #bdc3c7;
+}
+.snip1092.silver:after {
+  background: #d9dcde;
+}
+
+

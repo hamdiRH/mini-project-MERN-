@@ -1,0 +1,234 @@
+@import 'https://fonts.googleapis.com/css?family=Dosis|Roboto:300,400';
+/* * {
+	margin: 0;
+	padding: 0;
+} */
+
+/*  body {
+	background: #ffc185;
+}  */
+
+
+
+.container-auth{
+	position:absolute;
+	width:auto;
+	height:auto;
+	top: calc(50% - 240px);
+    left: calc(50% - 160px);
+    border: 0.5px solid #dc006c !important;
+}
+
+.formm {
+	position: absolute;
+	text-align: center;
+	background: #fff;
+	width: 310px;
+	min-height: 470px;
+	border-radius: 5px;
+	padding: 30px 20px 0 20px;
+	box-shadow: 0 10px 50px 0 rgba(0, 0, 0, 0.25);
+	box-sizing: border-box;
+}
+
+.pp {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 100;
+	text-transform: uppercase;
+	font-size: 12px;
+	color: #87613d;
+	margin-bottom: 20px;
+}
+
+.h3auth {
+	font-family: 'Dosis';
+	font-size: 35px;
+	text-transform: uppercase;
+	color: #87613d;
+}
+
+.authinput,
+.authbutton{
+	outline: none !important; 
+}
+
+button.form-btn {
+    
+	position: absolute;
+	width: 50%;
+	height: 60px;
+	bottom: 0;
+	border: 0;
+	font-family: 'Dosis';
+	font-size: 24px;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+
+button.form-btn.sx {
+	left: 0;
+	border-radius: 0 0 0 5px;
+	background-color: rgba(220, 0, 108, 0.55);
+	color: #fff;
+	transition:all 0.3s linear;
+}
+
+button.form-btn.sx:hover {
+	background-color:rgba(220, 0, 108, 0.85);
+	color: #fff;
+}
+
+button.form-btn.sx.back {
+	background-color: rgba(220, 0, 108, 0.55);
+	transition:all 0.3s linear;
+}
+
+button.form-btn.sx.back:hover {
+	background-color: rgba(220, 0, 108, 0.85);
+}
+
+button.form-btn.dx {
+	right: 0;
+	border-radius: 0 0 5px 0;
+	background-color: #dc006c;
+	color: #fff;
+}
+
+.authinput {
+	border: none !important;
+	border-bottom: 1px solid #dc006c !important;
+	width: 85% !important;
+	font-family: 'Roboto' !important;
+	color: #dc006c !important;
+	text-align: center !important;
+	font-size: 21px !important;
+	font-weight:100 !important;
+	margin-bottom:10px !important;
+}
+
+::-webkit-input-placeholder {
+   color: #dc006c !important;
+	font-family: 'Roboto';
+	font-weight:100;
+}
+
+:-moz-placeholder {
+   color: #dc006c !important;  
+	font-family: 'Roboto';
+	font-weight:100;
+}
+
+::-moz-placeholder {
+   color: #dc006c !important;  
+	font-family: 'Roboto';
+	font-weight:100;
+}
+
+:-ms-input-placeholder {  
+   color: #dc006c !important; 
+	font-family: 'Roboto';
+	font-weight:100;
+}
+
+.signIn input,
+.signUp .w100 {
+	width: 100%;
+}
+
+.signIn{
+		z-index: 1;
+		transform: perspective(100px) translate3d(100px, 0px, -30px);
+		opacity: 0.5;
+}
+
+.signUp {
+	z-index: 2;
+}
+
+.active-dx{
+	animation-name: foregrounding-dx;
+	animation-duration: 0.9s;
+	animation-fill-mode: forwards;
+}
+
+.active-sx{
+	animation-name: foregrounding-sx;
+	animation-duration: 0.9s;
+	animation-fill-mode: forwards;
+}
+
+.inactive-dx{
+	animation-name: overshadowing-dx;
+	animation-duration: 0.9s;
+	animation-fill-mode: forwards;
+}
+
+.inactive-sx{
+	animation-name: overshadowing-sx;
+	animation-duration: 0.9s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes overshadowing-dx {
+	0%{
+		z-index:2;
+		transform: perspective(100px) translate3d(0px, 0px, 0px);
+		opacity: 1;
+		box-shadow: 0 10px 50px 0 rgba(0, 0, 0, 0.25);
+	}
+	100%{
+		z-index: 1;
+		transform: perspective(100px) translate3d(100px, 0px, -30px);
+		opacity: 0.5;
+		box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.25);
+	}
+}
+
+@keyframes overshadowing-sx {
+	0%{
+		z-index:2;
+		transform: perspective(100px) translate3d(0px, 0px, 0px);
+		opacity: 1;
+		box-shadow: 0 10px 50px 0 rgba(0, 0, 0, 0.25);
+	}
+	100%{
+		z-index: 1;
+		transform: perspective(100px) translate3d(-100px, 0px, -30px);
+		opacity: 0.5;
+		box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.25);
+	}
+}
+
+@keyframes foregrounding-dx {
+	0%{
+		z-index:1;
+		transform: perspective(100px) translate3d(100px, 0px, -30px);
+		opacity: 0.5;
+	}
+	50%{
+		z-index:2;
+		transform: perspective(100px) translate3d(400px, 0px, -30px);
+	}
+	100%{
+		z-index:2;
+		transform: perspective(100px) translate3d(0px, 0px, 0px);
+		opacity: 1;
+	}
+}
+
+@keyframes foregrounding-sx {
+	0%{
+		z-index:1;
+		transform: perspective(100px) translate3d(-100px, 0px, -30px);
+		opacity: 0.5;
+	}
+	50%{
+		z-index:2;
+		transform: perspective(100px) translate3d(-400px, 0px, -30px);
+	}
+	100%{
+		z-index:2;
+		transform: perspective(100px) translate3d(0px, 0px, 0px);
+		opacity: 1;
+	}
+}

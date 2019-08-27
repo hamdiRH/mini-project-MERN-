@@ -1,0 +1,124 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500);
+figure.snip1096 {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  font-family: 'Raleway', Arial, sans-serif;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  margin: 10px;
+  min-width: 220px;
+  max-width: 310px;
+  width: 100%;
+  text-align: center;
+}
+
+figure.snip1096 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+figure.snip1096:before,
+figure.snip1096:after {
+  position: absolute;
+  width: 100%;
+  background: #000000;
+  height: 0px;
+  display: block;
+  content: '';
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+figure.snip1096:before {
+  top: 0;
+}
+
+figure.snip1096:after {
+  bottom: 0;
+}
+
+figure.snip1096 img {
+  max-width: 100%;
+  margin-bottom: -5px;
+}
+
+figure.snip1096 figcaption {
+  position: relative;
+  background: #ffffff;
+  height:100%
+}
+
+figure.snip1096 h3,
+figure.snip1096 p {
+  margin: 0;
+  display: inline-block;
+  width: 100%;
+}
+
+figure.snip1096 h3 {
+  width: 70%;
+  font-size:20px;
+   letter-spacing: -1px;
+  padding: 12px 15px;
+  background: #333333;
+  text-transform: uppercase;
+  -webkit-transform: translateY(-50%) rotate(0deg) scale(1);
+  transform: translateY(-50%) rotate(0deg) scale(1);
+}
+
+figure.snip1096 p {
+  font-size: 0.9em;
+  font-weight: 500;
+  background: #ffffff;
+  color: #4d4d4d;
+  padding: 10px 40px 40px;
+}
+
+figure.snip1096 a {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  color: #ffffff;
+}
+
+figure.snip1096.blue h3,
+figure.snip1096.blue:before,
+figure.snip1096.blue:after {
+  background: #2980b9;
+}
+
+figure.snip1096.red h3,
+figure.snip1096.red:before,
+figure.snip1096.red:after {
+  background: #c0392b;
+}
+
+figure.snip1096.yellow h3,
+figure.snip1096.yellow:before,
+figure.snip1096.yellow:after {
+  background: #f39c12;
+}
+
+figure.snip1096.navy h3,
+figure.snip1096.navy:before,
+figure.snip1096.navy:after {
+  background: #34495e;
+}
+
+figure.snip1096:hover figcaption h3,
+figure.snip1096.hover figcaption h3 {
+  -webkit-transform: translateY(-50%) rotate(-8deg) scale(1.1);
+  transform: translateY(-50%) rotate(-8deg) scale(1.1);
+}
+
+figure.snip1096:hover:before,
+figure.snip1096.hover:before,
+figure.snip1096:hover:after,
+figure.snip1096.hover:after {
+  height: 10px;
+}
+

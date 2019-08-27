@@ -1,0 +1,376 @@
+@import url("https://fonts.googleapis.com/css?family=Archivo+Narrow|Gugi");
+.Contacttitle {
+  font-family: "Archivo Narrow", sans-serif;
+  font-weight: bold;
+  text-align: center;
+  color: #dc006c;
+}
+.tit {
+  font-weight: bold;
+  font-size: 24px;
+  text-align: center;
+  color: white;
+  width: 90%;
+  margin: auto;
+  border: 3px solid #dc006c;
+  background-color: rgba(27, 26, 26, 0.7);
+  border-radius: 150px;
+}
+.tit2 {
+  font-weight: bold;
+  font-size: 24px;
+  text-align: center;
+  color: white;
+  width: 70%;
+  margin: auto;
+}
+
+.remove-btn {
+  margin-right: 0.5rem;
+}
+
+.fade-enter {
+  opacity: 0.01;
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transition: opacity 1000ms ease-in;
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit-active {
+  opacity: 0.01;
+  transition: opacity 1000ms ease-in;
+}
+
+/* logo css */
+small {
+  color: #333;
+}
+.logo {
+  font: 84px "Arial Narrow", sans-serif;
+  color: #fefefe;
+  text-transform: uppercase;
+  letter-spacing: -4px;
+  font-size: 40px;
+}
+
+/* stuff for both words */
+.logo span {
+  position: relative;
+}
+.logo span:before,
+.logo span:after {
+  content: "";
+  position: absolute;
+  border-width: 32px; /* makes a nice, big 64px square */
+  border-style: solid;
+  border-color: transparent;
+  height: 0;
+  z-index: 10;
+}
+
+/* stuff for 1st word */
+.logo .word1 {
+  color: #dc006c;
+  margin-right: -10px;
+  transform: rotateY(180deg); /* using Prefix free */
+  display: inline-block; /* required for transform */
+  z-index: 10; /* stack 1st word on top */
+}
+.logo .word1:before {
+  right: -4px; /* would be left, but we flipped the word */
+  top: -9px;
+}
+.logo .word1:after {
+  left: 17px; /* would be right, but we flipped the word */
+  bottom: -15px;
+}
+
+/* stuff for 2nd word */
+.logo .word2 {
+  z-index: 0; /* stack 2nd word below */
+}
+.logo .word2:before {
+  left: -4px;
+  top: -6px;
+}
+.logo .word2:after {
+  right: -4px;
+  bottom: 4px;
+}
+
+/* Athbtn */
+.Athbtn {
+  width: 100px;
+  text-align: center;
+  border: 2px solid #dc006c;
+  font-weight: bold;
+  margin: 0 10px;
+}
+
+.Athbtn:hover {
+  background-color: #dc006c;
+}
+
+/*
+
+*/
+
+body,
+html {
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 "Lato", sans-serif;
+  color: #777;
+}
+
+.bgimg-1,
+.bgimg-2,
+.bgimg-3 {
+  position: relative;
+  opacity: 0.8;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bgimg-1 {
+  background-image: url("./img/697849.jpg");
+  height: 1000px;
+}
+
+.bgimg-2 {
+  background-image: url("./img/anime_school_winter_street_674_1920x1080.jpg");
+  min-height: 700px;
+}
+
+.bgimg-3 {
+  background-image: url("./img/photo-1542944951-929275bc9c65.jpg");
+  min-height: 700px;
+}
+
+.bgimg-4 {
+  background-image: url("./img/classroom-2787754_1280.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 700px;
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 40%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.caption span.border {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+  .bgimg-1,
+  .bgimg-2,
+  .bgimg-3 {
+    background-attachment: scroll;
+  }
+  .button {
+    position: fixed;
+    right: 12px !important;
+    bottom: 84px !important;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .blocfeature {
+    margin: 25px 5px 30px;
+  }
+  .logo {
+    font-size: 30px;
+  }
+}
+
+/*
+    footer
+*/
+.footer {
+  z-index: 0;
+  height: 100%;
+  position: sticky;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  color: white;
+  padding-top: 1rem;
+  background: radial-gradient(
+      circle at calc(100% - 38px) 23%,
+      rgba(0, 0, 0, 0) 31px,
+      rgb(27, 26, 26) 32px
+    )
+    no-repeat;
+}
+
+.button {
+  /* background:url("https://scontent.ftun2-1.fna.fbcdn.net/v/t1.0-9/14915310_1258548050864306_7195688227489574904_n.jpg?_nc_cat=100&_nc_ht=scontent.ftun2-1.fna&oh=0bdcf1a07fcad4d1cc9a9cd865eff81b&oe=5D53BD5C")no-repeat center / contain; */
+  background: url("./img/59909021_609333379581937_8367304640089292800_n.jpg")
+    no-repeat center / contain;
+  outline: none;
+  border: solid;
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  /* color: rgb(139, 0, 0);
+background-color: rgb(139, 0, 0); */
+  position: fixed;
+  right: 8px;
+  bottom: 90px;
+  animation: rotation 20s infinite linear;
+}
+
+@-webkit-keyframes rotation {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+  }
+}
+
+.material-icons {
+  color: rgb(255, 255, 255);
+  font-weight: 200 !important;
+  font-size: 40px !important;
+}
+
+/*feature bloc*/
+.blocfeature {
+  width: 320px;
+  height: 400px;
+  background-color: #fff;
+  border: 3px solid #dc006c;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 25px 50px 30px;
+}
+
+.blocfeature img {
+  width: 150px;
+  height: 100px;
+}
+
+.blocfeature > h5 {
+  text-align: center;
+  margin-top: 30px;
+  color: black;
+  font-weight: bold;
+}
+.blocfeaturep {
+  color: grey;
+  font-weight: bold;
+  margin: 20px 5% 5px;
+}
+
+.hover:hover {
+  opacity: 0.5;
+}
+
+.box {
+  width: 1200px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-gap: 15px;
+  margin: 0 auto;
+}
+.card {
+  position: relative;
+  width: 300px;
+  height: 350px;
+  background: #fff;
+  margin: 0 auto;
+  border-radius: 4px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+.card:before,
+.card:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+  background: #fff;
+  transition: 0.5s;
+  z-index: -1;
+}
+.card:hover:before {
+  transform: rotate(20deg);
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+}
+.card:hover:after {
+  transform: rotate(10deg);
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+}
+.card .imgBx {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  bottom: 10px;
+  right: 10px;
+  background: #222;
+  transition: 0.5s;
+  z-index: 1;
+}
+
+.card:hover .imgBx {
+  bottom: 80px;
+}
+
+.card .imgBx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card .details {
+  position: absolute;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  height: 60px;
+  text-align: center;
+}
+
+.card .details h2 {
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+  font-size: 20px;
+  color: #777;
+  text-transform: uppercase;
+}
+
+.card .details h2 span {
+  font-weight: 500;
+  font-size: 16px;
+  color: #f38695;
+  display: block;
+  margin-top: 5px;
+}

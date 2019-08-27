@@ -1,0 +1,139 @@
+.a {
+    text-decoration: none;
+    color: #224;
+    -webkit-transition: color .25s;
+    transition: color .25s;
+}
+.a:focus,
+.a:hover {
+    color: #616161;
+}
+
+
+
+.main {
+    grid-area: main;
+}
+
+
+
+
+.main {
+	  margin: 0 auto;
+	  max-width: 900px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 100%;
+    grid-template-columns: 100%;
+    grid-row-gap: 2rem;
+		-webkit-animation:colorchange 5s infinite alternate;
+}
+
+#card {
+    border-radius: 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 1rem;
+    background-color: #fff;
+	  border-bottom: 3px solid #fa3380;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.08);
+    -webkit-transition: all 250ms cubic-bezier(0.02, 0.01, 0.47, 1);
+    transition: all 250ms cubic-bezier(0.02, 0.01, 0.47, 1);
+}
+
+#card:focus,
+#card:hover {
+    box-shadow: 0 30px 30px rgba(0, 0, 0, 0.16);
+    -webkit-transform: translate(0, -10px);
+    transform: translate(0, -10px);
+}
+#card a {
+    margin-top: auto;
+}
+.card__heading {
+    margin-top: 0;
+    font-size: 1.125rem;
+}
+.card__excerpt {
+    font-size: 0.875rem;
+}
+.epitaph {
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
+    display: block;
+    text-align: center;
+}
+.fa-heart {
+    color: #e74c3c;
+}
+
+
+
+
+ @-webkit-keyframes colorchange {
+      0% {
+        
+        color: darkviolet;
+      }
+      
+      10% {
+        
+        color: #fa3380;
+      }
+      
+      20% {
+        
+        color: rgba(2,179,228,0.8);
+      }
+      
+      30% {
+        
+        color: rgba(2,204,186,0.8);
+      }
+      
+      40% {
+        
+        color: rgba(169,81,237,0.8);
+      }
+      
+      50% {
+        
+        color: rgba(255,162,52,0.8);
+      }
+      
+      60% {
+        
+        color: rgba(255,84,131,0.8);
+      }
+      
+      70% {
+        
+        color: deepskyblue;
+      }
+      80% {
+     
+        color: purple;
+      }
+      
+      90% {
+     
+        color: lightpink;
+      }
+      
+      100% {
+        
+        color: rgba(125,151,173,0.8);
+      }
+    }
+
+
+
+
+
+
+
