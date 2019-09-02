@@ -1,25 +1,16 @@
 import React from "react";
 import AppNavbar from "./components/AppNavbar";
 import Contact from "./Contact";
-import axios from "axios";
-
+import { getfeature } from './actions/featuresActions'
 import { connect } from "react-redux";
 import { Link } from "react-router-dom";
 import "./card.css";
 
 class Static extends React.Component {
-  state = {
-    arr: []
-  };
+
   componentDidMount() {
-    axios
-      .get("/api/features")
-      .then(res => {
-        this.setState({ arr: res.data });
-      })
-      .catch(error => {
-        console.log(error);
-      });
+    this.props.getfeature()
+
   }
   render() {
     return (
@@ -66,7 +57,7 @@ class Static extends React.Component {
             tasks and complex processes.
           </p>
           <div className="d-flex mt-5 flex-wrap">
-            {this.state.arr.map((el, i) => (
+            {this.props.feature.map((el, i) => (
               <div className="blocfeature" key={i}>
                 <img src={el.img} alt="feature" /> <h5>{el.title}</h5>{" "}
                 <p className="blocfeaturep">{el.ctn}</p>
@@ -225,10 +216,13 @@ class Static extends React.Component {
     );
   }
 }
-const mapStateToProps = state => ({
-  auth: state.auth
-});
+const mapStateToProps = state => {
+  return {
+    auth: state.auth,
+    feature: state.feature
+  }
+};
 export default connect(
   mapStateToProps,
-  null
+  { getfeature }
 )(Static);
