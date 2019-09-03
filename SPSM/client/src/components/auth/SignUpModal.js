@@ -90,7 +90,6 @@ class RegisterModal extends Component {
             name, email, password, birthday, tel, gender, adresse, classSection, guardienName, guardienTel, guardienEmail
         };
 
-        console.log(newUser)
 
         // Attempt to register
         this.props.register(newUser);

@@ -10,7 +10,6 @@ class Static extends React.Component {
 
   componentDidMount() {
     this.props.getfeature()
-
   }
   render() {
     return (
@@ -57,7 +56,7 @@ class Static extends React.Component {
             tasks and complex processes.
           </p>
           <div className="d-flex mt-5 flex-wrap">
-            {this.props.feature.map((el, i) => (
+            {this.props.isloading ? <div class="lds-hourglass"></div> : this.props.feature.map((el, i) => (
               <div className="blocfeature" key={i}>
                 <img src={el.img} alt="feature" /> <h5>{el.title}</h5>{" "}
                 <p className="blocfeaturep">{el.ctn}</p>
@@ -219,7 +218,8 @@ class Static extends React.Component {
 const mapStateToProps = state => {
   return {
     auth: state.auth,
-    feature: state.feature
+    feature: state.feature.feature,
+    featureLoading: state.feature.isloading
   }
 };
 export default connect(

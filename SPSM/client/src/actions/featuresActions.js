@@ -1,5 +1,8 @@
 import axios from 'axios'
 export const getfeature = () => dispatch => {
+    dispatch({
+        type: "LOADING_FEATURE"
+    })
     axios
         .get("/api/features")
         .then(res => dispatch({
